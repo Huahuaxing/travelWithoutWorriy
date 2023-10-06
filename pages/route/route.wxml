@@ -1,0 +1,26 @@
+<!--pages/route/route.wxml-->
+
+<scroll-view scroll-x="true" class="demo-scroll-nav">
+    <view class="nav-wrapper">
+      <text class="{{navIndex == index ? 'active':''}}" wx:for="{{navArr}}" wx:key="unique" bindtap="navChange" data-index="{{index}}">{{item}}</text>
+    </view>
+</scroll-view>
+
+<view wx:if="{{navIndex==0}}">
+  <view>北京旅游方案</view>
+  <block wx:for="{{beijingImages}}" wx:key="*this">
+    <image class="a" src="{{item}}" mode="widthFix"/>
+  </block>
+</view>
+<view wx:if="{{navIndex==1}}">
+  <view>天津旅游方案</view>
+  <block wx:for="{{tianjinImages}}" wx:key="*this">
+    <image class="a" src="{{item}}" mode="widthFix"/>
+  </block>
+</view>
+<view wx:if="{{navIndex==2}}">
+  <view>河北旅游方案</view>
+  <block wx:for="{{hebeiImages}}" wx:key="*this">
+    <image class="a" src="{{item}}" mode="widthFix"/>
+  </block>
+</view>

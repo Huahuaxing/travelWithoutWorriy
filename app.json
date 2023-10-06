@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/route/route",
+    "pages/customization/customization",
+    "pages/project/project",
+    "pages/mine/mine",
+    "pages/login/login",
+    "pages/Beijing/Beijing",
+    "pages/Tianjin/Tianjin",
+    "pages/Hebei/Hebei",
+    "pages/details/details"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "无忧轻旅",
+    "navigationStyle": "default"
+  },
+  "style": "v2",
+  "renderer": "webview",
+  "rendererOptions": {
+    "skyline": {
+      "defaultDisplayBlock": true,
+      "disableABTest": true,
+      "sdkVersionBegin": "3.0.0",
+      "sdkVersionEnd": "15.255.255"
+    }
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "tabs/home.png",
+      "selectedIconPath": "tabs/home_active.png"
+    },{
+      "pagePath": "pages/route/route",
+      "text": "路线",
+      "iconPath": "tabs/route.png",
+      "selectedIconPath": "tabs/route_active.png"
+    },{
+      "pagePath": "pages/customization/customization",
+      "iconPath": "tabs/customination.png",
+      "selectedIconPath": "tabs/customization_active.png"
+    },{
+      "pagePath": "pages/project/project",
+      "text": "规划",
+      "iconPath": "tabs/project.png",
+      "selectedIconPath": "tabs/project_active.png"
+    },{
+      "pagePath": "pages/mine/mine",
+      "text": "我的",
+      "iconPath": "tabs/contact.png",
+      "selectedIconPath": "tabs/contact_active.png"
+    }]
+  }
+}

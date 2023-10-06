@@ -1,0 +1,25 @@
+<!--pages/home/home.wxml-->
+<!-- 轮播图 -->
+<view>
+  <swiper duration='200' circular='true' bindtap="clickSwiper" indicator-dots="true">
+    <block wx:for="{{swiperImages}}" wx:key="*this">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" mode="scaleToFill" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!-- 分割线 -->
+<view class="hr"></view>
+<!-- 三种选项 -->
+<view class="Three">
+  <block wx:for="{{threeImages}}" wx:key="*this">
+      <navigator url="{{item.url}}">
+          <image src="{{item.src}}" class="Three-image" mode="scaleToFill"/>
+      </navigator>
+  </block>
+</view>
+<!-- 分割线 -->
+<view class="hr"></view>
+<!-- 三分类 -->
+<image src="{{Add}}" class="Add" mode="scaleToFill" bindtap="clickAdd" />

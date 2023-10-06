@@ -1,0 +1,21 @@
+/* pages/route/route.wxss */
+.demo-scroll-nav {
+  height: 80rpx;
+}
+.nav-wrapper {
+  height: 100%;
+  white-space: nowrap;
+}
+.nav-wrapper text {
+  display: inline-block;
+  padding: 0 10px;
+  height: 100%;
+  line-height: 80rpx;
+  
+}
+.nav-wrapper text.active {
+  color: #ff4400;
+}
+.a{
+  width: 100%;
+}
