@@ -9,11 +9,28 @@ Page({
   },
 
   //登录按钮
-  Login:function(){
+  Login(){
     wx.navigateTo({
       url: '../login/login',
       success:function(res){
         console.log(res)
+      }
+    })
+  },
+
+  Login2(){
+    wx.getUserProfile({
+      desc: '授权继续',
+      success: res => {
+        let user = res.userInfo
+        console.log("用户信息", user)
+        this.setData({
+          nickName: user.nickName,
+          touxiang: user.avatarUrl
+        })
+      },
+      fail: res => {
+        console.log('授权失败', res)
       }
     })
   },

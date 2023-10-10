@@ -2,3 +2,4 @@
 <text>pages/mine/mine.wxml</text>
 
 <button type="primary" bindtap="Login">点击登录</button>
+<view class="hr1"></view>
